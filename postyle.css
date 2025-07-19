@@ -303,6 +303,17 @@ body{
 
 }
 
+@keyframes appear {
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+    
+}
 
 
 
@@ -328,7 +339,8 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap:1.5rem
+    gap:1.5rem;
+    
 }
 
 .about-img img{
@@ -339,8 +351,10 @@ body{
     border-radius: 50%;
     filter: grayscale(100%);
     opacity: 0;
-    animation: slideRight 1.5s ease forwards;
+    animation: slideRight 5s ease forwards;
     animation-delay: .7s;
+    
+    
     
     
 
